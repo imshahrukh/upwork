@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$primary-pink: #cd1d46;
+$primary-black: #292727;
+$light-gray: #a8b1b6;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.top--nav {
+  width: 100%;
+  //   height: 100vh;
+  position: relative;
+  padding: 1rem;
+  //   border-bottom: 1px solid red;
+  .link {
+    display: flex;
+  }
+  .cross {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .nav-item {
+    height: 100vh;
+    // border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+
+    & li {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      padding: 1rem;
+      margin: 0.5rem;
+      & a {
+        color: white;
+      }
+      &:hover {
+        border-top: 1px solid $primary-pink;
+        font-size: 1rem;
+        font-weight: 600;
+        & a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// welcome
+
+.welcome {
+  //   border: 1px solid white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wlcm-holder {
+    width: 80%;
+    max-width: 600px;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & p,
+    & h2 {
+      color: $light-gray;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    & h2 {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: white;
+    }
+    .title {
+      color: $primary-pink;
+      text-transform: uppercase;
+    }
+    .para {
+      line-height: 1.8rem;
+    }
+    & div {
+      margin-top: 1rem;
+      & span {
+        color: $light-gray;
+        display: inline;
+        margin-left: 1rem;
+        color: white;
+      }
+      & span:nth-child(1) {
+        text-decoration: underline;
+        // line-height: 1rem;
+      }
+    }
+  }
+}
+
+// youtube
+
+.about-bl-img {
+  height: 25rem;
+  //   border: 1px solid goldenrod;
+
+  position: relative;
+  .image {
+    background-image: url("./../images/cell.png");
+    width: 100%;
+    height: 100%;
+    background-size: 250%;
+    background-position: (-200px, 100px);
+    // background-position: auto;
+
+    clip-path: polygon(0 15%, 100% 26%, 100% 86%, 0 77%);
+  }
+  .playbtn {
+    width: 5rem;
+    position: absolute;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $primary-pink;
+    top: 10%;
+    left: 45%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+// card hodlder
+
+.cards-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  //   border: 1px solid red;
+
+  .card {
+    width: 85%;
+    max-width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px dashed red;
+    // height: 10vh;
+    & img {
+      border: 50%;
+      max-height: 253px;
+      height: 150px;
+    }
+    .information {
+      padding: 1rem;
+      & h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 1rem;
+      }
+      & p {
+        line-height: 1.3rem;
+        color: $light-gray;
+      }
+    }
+  }
+}
+
+// head hand
+
+.headhand-bl-img {
+  height: 25rem;
+  //   border: 1px solid goldenrod;
+
+  position: relative;
+  .image {
+    background-image: url("./../images/brain-hand.png");
+    width: 100%;
+    height: 100%;
+    background-size: 300%;
+    background-position: (-250px, 100px);
+    // background-position: auto;
+
+    clip-path: polygon(0 15%, 100% 26%, 100% 86%, 0 77%);
+  }
+}
+
+// video
+
+.video {
+  width: 100%;
+  height: 300px;
+  max-height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  & video {
+    height: 100%;
+    width: 80%;
+  }
+  .btn {
+    padding: 1rem;
+    border-radius: 30px;
+    border: 1px solid $primary-pink;
+    color: white;
+  }
+}
+
+// cell home
+
+.cell-home-bl-img {
+  height: 25rem;
+  //   border: 1px solid goldenrod;
+
+  position: relative;
+  .image {
+    background-image: url("./../images/cell_home.png");
+    width: 100%;
+    height: 100%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: (-100px, 100px);
+    // background-position: auto;
+    // background-size: cover;
+    clip-path: polygon(0 25%, 100% 42%, 100% 100%, 0% 100%);
+  }
+}
+
+// footer-bar
+
+.footer-bar {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  .bar-cont {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $light-gray;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    & p {
+      color: $light-gray;
+    }
+  }
+}
+// our Mission
+
+// mediaQurey
+// mediaQurey
+// mediaQurey
+// mediaQurey
+// mediaQurey
+// mediaQurey
+
+@media screen and (min-width: 750px) {
+  .top--nav {
+    // justify-content: space-between;
+
+    // border: 1px solid blue;
+    .links {
+      justify-content: space-between;
+      display: flex !important;
+      align-items: center;
+      flex-direction: row;
+      .lst-child {
+        border: 1px solid $primary-pink;
+        border-radius: 30px;
+      }
+    }
+    .nav-item {
+      flex-direction: row;
+      display: flex;
+      height: 100%;
+    }
+    .cross {
+      display: none;
+    }
+  }
+
+  .about-bl-img,
+  .cell-home-bl-img {
+    height: 35rem;
+    .playbtn {
+      top: 12%;
+      left: 45%;
+    }
+    .image {
+      background-size: auto;
+    }
+  }
+  .cards-holder {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    justify-content: center;
+    .card {
+      border: none;
+
+      .information {
+        & p {
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+  .headhand-bl-img {
+    height: 35rem;
+    .playbtn {
+      top: 12%;
+      left: 45%;
+    }
+    .image {
+      background-size: auto;
+    }
+  }
+
+  .video {
+    & video {
+      width: 50%;
+    }
+  }
+  .footer-bar {
+    margin-top: 1rem;
+    .bar-cont {
+      flex-direction: row;
+    }
+  }
+}
+
+.show {
+  display: flex !important;
+  //   border: 1px solid red;
+  visibility: none;
+}
+
+@mixin rings($duration, $delay) {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: 0;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.34, 1);
+  z-index: -1;
+}
