@@ -28,13 +28,17 @@ $primary-black: #292727;
 $light-gray: #a8b1b6;
 html {
   scroll-behavior: smooth;
-  background: black;
+  // background: black;
   overflow-x: hidden;
 }
 
 li {
   list-style: none;
   text-decoration: none;
+}
+.ps {
+  width: 120%;
+  // border: 1px solid red;
 }
 
 a {
@@ -52,15 +56,15 @@ a {
 .top--nav {
   width: 100%;
   position: relative;
-  background: black;
+  // background: black;
   padding-left: 2rem;
   padding-right: 2rem;
 
   .links {
     display: flex;
-    background: black;
+    // background: black;
     .icons {
-      background: black;
+      // background: black;
     }
   }
   .cross {
@@ -75,7 +79,7 @@ a {
     height: 100vh;
 
     // border: 1px solid white;
-    background: black;
+    // background: black;
 
     justify-content: center;
     align-items: center;
@@ -90,6 +94,7 @@ a {
       margin: 0.5rem;
       & a {
         color: white;
+        font-size: 1rem;
       }
       &:hover {
         border-top: 1px solid $primary-pink;
@@ -104,7 +109,10 @@ a {
 }
 
 // welcome
-
+.pt1 {
+  transform: translateY(-7rem);
+  overflow: hidden;
+}
 .welcome {
   //   border: 1px solid white;
   //   margin-top: 8rem;
@@ -206,6 +214,8 @@ a {
     }
     .information {
       padding: 1rem;
+      border-radius: 1px solid green;
+
       & h3 {
         font-size: 1.2rem;
         font-weight: 600;
@@ -215,6 +225,12 @@ a {
       & p {
         line-height: 1.3rem;
         color: $light-gray;
+        // border: 1px solid red;
+        // width: 110%;
+        padding: 1rem;
+        font-size: 0.9rem;
+        // margin: 1rem;
+        // margin-left: 2rem;
       }
     }
   }
@@ -260,8 +276,15 @@ a {
 }
 .our-p {
   flex-direction: column;
-  margin-top: -10rem;
+  margin-top: -8rem;
+  transform: translateY(-15rem);
   padding-bottom: 2rem;
+  .wlcm-holder {
+    & h2 {
+      letter-spacing: 1px;
+      font-size: 1.9rem;
+    }
+  }
 }
 // our people
 .our-p-nav {
@@ -293,6 +316,7 @@ a {
 
 .card-holder {
   width: 100%;
+  transform: translateY(-15rem);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -341,7 +365,7 @@ a {
           margin-top: 0.5rem;
           margin-right: 0.2rem;
           align-items: center;
-          justify-content: center;
+          // justify-content: center;
           .icons {
             background: black;
 
@@ -453,6 +477,7 @@ a {
 @media screen and (min-width: 750px) {
   .welcome {
     margin-top: 6rem;
+    // border: 1px solid red;
     .wlcm-holder {
       .title {
         margin-bottom: 1.5rem;
@@ -515,6 +540,7 @@ a {
 
   .about-bl-img,
   .cell-home-bl-img {
+    transform: translateY(-7rem);
     height: 35rem;
 
     .image {

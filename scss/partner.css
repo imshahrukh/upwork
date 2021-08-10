@@ -15,6 +15,10 @@
   font-family: "Cooper Hewitt";
 }
 
+.bg {
+  background-image: url("./../images/parnters.png");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,12 +34,7 @@ a {
   z-index: 200;
 }
 
-.containor {
-  background-color: #211f1f;
-}
-
 .top--nav {
-  background-color: black;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -188,6 +187,10 @@ a {
           clip-path: polygon(0 25%, 100% 42%, 100% 100%, 0% 100%);
 }
 
+.temp {
+  padding: 1rem;
+}
+
 .footer-bar {
   width: 100%;
   -webkit-box-pack: center;
@@ -273,9 +276,6 @@ a {
   }
   .welcome .wlcm-holder .para {
     margin-bottom: 1.5rem;
-  }
-  .footer-bar {
-    margin-top: 1rem;
   }
   .footer-bar .bar-cont {
     -webkit-box-orient: horizontal;
@@ -398,9 +398,6 @@ a {
   }
   .headhand-bl-img .image {
     background-size: auto;
-  }
-  .footer-bar {
-    margin-top: 1rem;
   }
   .footer-bar .bar-cont {
     -webkit-box-orient: horizontal;

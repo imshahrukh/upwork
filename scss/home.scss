@@ -27,8 +27,11 @@ $light-gray: #a8b1b6;
 html {
   scroll-behavior: smooth;
 }
+.brd {
+  border-top: 1px solid $primary-pink;
+}
 body {
-  //   background-color: black;
+  // background-color: black !important;
 }
 li {
   list-style: none;
@@ -41,7 +44,8 @@ a {
   z-index: 200;
 }
 .containor {
-  background-color: rgb(33, 31, 31);
+  background-color: rgb(0, 0, 0);
+  // border: 1px solid white;
 }
 .top--nav {
   background-color: black;
@@ -79,6 +83,7 @@ a {
       margin: 0.5rem;
       & a {
         color: white;
+        font-size: 1rem;
       }
       &:hover {
         border-top: 1px solid $primary-pink;
@@ -93,9 +98,18 @@ a {
 }
 
 // welcome
+.pt1 {
+  background-size: cover;
+  z-index: 15;
+  transform: translateY(-10rem);
+  width: 100%;
+  background-repeat: repeat-x;
+  // background-image: url("./../images/shutterstock_1809752635.png") !important;
+}
 
 .welcome {
   //   border: 1px solid white;
+  background: black;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -113,36 +127,79 @@ a {
     & h2 {
       color: $light-gray;
       text-align: center;
-      margin-top: 1rem;
+      margin-top: 0.2rem;
+      width: 100%;
+      // border: 1px solid red;
+    }
+    & p {
+      font-size: 0.8rem;
+      width: 98%;
     }
     & h2 {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       font-weight: 600;
       color: white;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
     }
     .title {
       color: $primary-pink;
       text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
     }
     .para {
-      line-height: 1.8rem;
+      // letter-spacing: 0.1rem;
+      line-height: 1.5rem;
+    }
+    .v-tit {
+      // border: 1px solid red;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .v-para {
+      // border: 1px solid red;
+      width: 90%;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.7px;
+    }
+    .v-h2 {
+      // border: 1px solid red;
+      width: 85%;
+    }
+    .m-title {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 600;
+      // border: 1px solid red;
+    }
+    .m-para {
+      width: 100%;
+      // border: 1px solid red;
+      text-align: center;
+      font-size: 0.9;
+      letter-spacing: 0.1px;
+    }
+    .m-h2 {
+      width: 100%;
+      // border: 1px solid red;
+      font-size: 1.5rem;
     }
     & div {
       margin-top: 1rem;
       & span {
         color: $light-gray;
         display: inline;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
         color: white;
+        font-size: 0.7rem;
       }
       & span:nth-child(1) {
         text-decoration: underline;
         // line-height: 1rem;
       }
     }
-  }
-  .pt1 {
-    background-image: url("./../images/shutterstock_1809752635.png");
   }
 }
 
@@ -161,16 +218,17 @@ a {
     background-position: (-200px, 100px);
     // background-position: auto;
 
-    clip-path: polygon(0 15%, 100% 26%, 100% 86%, 0 77%);
+    clip-path: polygon(0 8%, 100% 24%, 100% 73%, 0 61%);
   }
   .playbtn {
-    width: 5rem;
+    width: 6rem;
     position: absolute;
-    height: 5rem;
+    height: 6rem;
     border-radius: 50%;
     background-color: $primary-pink;
-    top: 10%;
-    left: 45%;
+    top: -1000px;
+    right: 0px;
+    border: 2px solid red;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -210,6 +268,7 @@ a {
         font-weight: 600;
         color: white;
         margin-bottom: 1rem;
+        letter-spacing: 0.9px;
       }
       & p {
         line-height: 1.3rem;
@@ -223,6 +282,7 @@ a {
 
 .headhand-bl-img {
   height: 25rem;
+  transform: translateY(-10rem);
   //   border: 1px solid goldenrod;
 
   position: relative;
@@ -234,7 +294,7 @@ a {
     background-position: (-250px, 100px);
     // background-position: auto;
 
-    clip-path: polygon(0 15%, 100% 26%, 100% 86%, 0 77%);
+    clip-path: polygon(0 8%, 100% 24%, 100% 73%, 0 61%);
   }
 }
 
@@ -248,6 +308,9 @@ a {
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  transform: translateY(-15rem);
+
   & video {
     height: 100%;
     width: 80%;
@@ -271,18 +334,22 @@ a {
     background-image: url("./../images/cell_home.png");
     width: 100%;
     height: 100%;
-    background-size: 150%;
-    background-repeat: no-repeat;
-    background-position: (-100px, 100px);
+    border: 1px solid red;
+    // background-size: 150%;
+    // background-repeat: no-repeat;
+    // background-position: (-200px, 100px);
     // background-position: auto;
     // background-size: cover;
-    clip-path: polygon(0 25%, 100% 42%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 9%, 100% 17%, 100% 77%, 0 69%);
   }
 }
-
+.top {
+  margin-top: 8rem;
+}
 // footer-bar
 
 .footer-bar {
+  transform: translateY(-10rem);
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -309,10 +376,13 @@ a {
 // mediaQurey
 // mediaQurey
 // mediaQurey
+.mission {
+  transform: translateY(-15rem);
+}
 
 @media screen and (min-width: 750px) {
   .welcome {
-    margin-top: 6rem;
+    // margin-top: 6rem;
     .wlcm-holder {
       .title {
         margin-bottom: 1.5rem;
@@ -414,16 +484,41 @@ a {
       display: none;
     }
   }
-
-  .about-bl-img,
   .cell-home-bl-img {
-    height: 35rem;
+    height: 30rem;
+    //   border: 1px solid goldenrod;
+    transform: translateY(-10rem);
+
+    position: relative;
+    .image {
+      background-image: url("./../images/cell_home.png");
+      width: 100%;
+      height: 100%;
+      border: 1px solid red;
+      // background-size: 150%;
+      // background-repeat: no-repeat;
+      // background-position: (-200px, 100px);
+      // background-position: auto;
+      // background-size: cover;
+      clip-path: polygon(0 9%, 100% 17%, 100% 77%, 0 69%);
+    }
+  }
+  .about-bl-img {
+    z-index: 100;
+    // background: white;
+    height: 45rem;
     .playbtn {
-      top: 12%;
-      left: 45%;
+      top: 8%;
+      left: 47%;
     }
     .image {
-      background-size: auto;
+      // background-size: auto;
+      width: 100%;
+      height: 100%;
+      background-size: 160%;
+      background-repeat: no-repeat;
+      background-position-x: -350px;
+      background-position-y: -570px;
     }
   }
   .cards-holder {
@@ -435,10 +530,18 @@ a {
     justify-content: center;
     .card {
       border: none;
-
+      & img {
+        width: 12rem;
+        height: 12rem;
+      }
       .information {
+        & h3 {
+          text-align: left;
+        }
         & p {
           line-height: 1.5rem;
+          text-align: left;
+          font-weight: 600;
         }
       }
     }

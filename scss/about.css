@@ -17,13 +17,16 @@
 
 html {
   scroll-behavior: smooth;
-  background: black;
   overflow-x: hidden;
 }
 
 li {
   list-style: none;
   text-decoration: none;
+}
+
+.ps {
+  width: 120%;
 }
 
 a {
@@ -44,7 +47,6 @@ a {
 .top--nav {
   width: 100%;
   position: relative;
-  background: black;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -53,11 +55,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: black;
-}
-
-.top--nav .links .icons {
-  background: black;
 }
 
 .top--nav .cross {
@@ -71,7 +68,6 @@ a {
 
 .top--nav .nav-item {
   height: 100vh;
-  background: black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -101,6 +97,7 @@ a {
 
 .top--nav .nav-item li a {
   color: white;
+  font-size: 1rem;
 }
 
 .top--nav .nav-item li:hover {
@@ -111,6 +108,12 @@ a {
 
 .top--nav .nav-item li:hover a {
   color: white;
+}
+
+.pt1 {
+  -webkit-transform: translateY(-7rem);
+          transform: translateY(-7rem);
+  overflow: hidden;
 }
 
 .welcome {
@@ -242,6 +245,7 @@ a {
 
 .cards-holder .card .information {
   padding: 1rem;
+  border-radius: 1px solid green;
 }
 
 .cards-holder .card .information h3 {
@@ -254,6 +258,8 @@ a {
 .cards-holder .card .information p {
   line-height: 1.3rem;
   color: #a8b1b6;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
 .headhand-bl-img {
@@ -297,8 +303,15 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -10rem;
+  margin-top: -8rem;
+  -webkit-transform: translateY(-15rem);
+          transform: translateY(-15rem);
   padding-bottom: 2rem;
+}
+
+.our-p .wlcm-holder h2 {
+  letter-spacing: 1px;
+  font-size: 1.9rem;
 }
 
 .our-p-nav {
@@ -337,6 +350,8 @@ a {
 
 .card-holder {
   width: 100%;
+  -webkit-transform: translateY(-15rem);
+          transform: translateY(-15rem);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -406,9 +421,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .card-holder .carde .card-left .icon-holder div .txt {
@@ -601,6 +613,8 @@ a {
   }
   .about-bl-img,
   .cell-home-bl-img {
+    -webkit-transform: translateY(-7rem);
+            transform: translateY(-7rem);
     height: 35rem;
   }
   .about-bl-img .image,

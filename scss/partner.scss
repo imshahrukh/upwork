@@ -6,6 +6,7 @@
 $primary-pink: #cd1d46;
 $primary-black: #292727;
 $light-gray: #a8b1b6;
+
 @font-face {
   font-family: "Cooper Hewitt";
   src: url("./../fonts/CooperHewitt-Light.otf");
@@ -24,6 +25,10 @@ $light-gray: #a8b1b6;
 * {
   font-family: "Cooper Hewitt";
 }
+.bg {
+  background-image: url("./../images/parnters.png");
+  // height: 10%;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -41,10 +46,10 @@ a {
   z-index: 200;
 }
 .containor {
-  background-color: rgb(33, 31, 31);
+  // background-color: rgb(33, 31, 31);
 }
 .top--nav {
-  background-color: black;
+  // background-color: black;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -174,7 +179,14 @@ a {
 }
 
 // footer-bar
+.temp {
+  // background-color: black;
+  // transform: translateY(-1rem);
+  padding: 1rem;
 
+  // padding: 2rem;
+  // transform: translateY(-0.4rem);
+}
 .footer-bar {
   width: 100%;
   justify-content: center;
@@ -238,8 +250,7 @@ a {
     }
   }
   .footer-bar {
-    margin-top: 1rem;
-    // transform: translateY(-8rem);
+    // margin-top: 1rem;
     .bar-cont {
       flex-direction: row;
     }
@@ -352,7 +363,7 @@ a {
   }
 
   .footer-bar {
-    margin-top: 1rem;
+    // margin-top: 1rem;
     .bar-cont {
       flex-direction: row;
     }
