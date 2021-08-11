@@ -10,5 +10,7 @@ cross.addEventListener("click", (e) => {
 Array.from(nav).map((el) => {
   el.addEventListener("click", () => {
     console.log(el.classList.toggle("brd"));
+    // if()
+    localStorage.setItem("li", el);
   });
 });

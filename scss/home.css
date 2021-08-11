@@ -112,6 +112,7 @@ a {
           transform: translateY(-10rem);
   width: 100%;
   background-repeat: repeat-x;
+  background-image: url("./../images/shutterstock_1809752635.png") !important;
 }
 
 .welcome {
